@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>Player Registration Form</title>
+  <title>Match Information Form</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,11 +12,12 @@
 <div class="row">
         <div class="col-lg-6 col-md-offset-3 jumbotron">
             <p><a href="{% url 'home' %}" class="btn btn-info" role="button">HOME</a></p>
-            <center><strong><h1><p>Player Registration Form</p></h1></strong></center>
+                <center><strong><h1><p>Match Information Form</p></h1></strong></center>
     <form action="" method="post">
         {% csrf_token %}
         {{ form.as_p}}
         <input type="submit" class="btn btn-info" value="Submit">
+    </form>
   </div>
 </div>
 </div>

@@ -1,0 +1,34 @@
+
+<html>
+        <head>
+            <title>Player Performance Information</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <style>
+                body {
+                  background: #555;
+                }
+                
+                .content {
+                  max-width: 500px;
+                  margin: auto;
+                  background: white;
+                  padding: 50px;
+                }
+                </style>
+        </head>
+        <body>
+        <div class="content">
+            <p><a href="{% url 'home' %}" class="btn btn-info" role="button">HOME</a></p>
+            <center><p><h1><strong>Player Performance Information</strong></h1></p></center>
+            <p><strong>Match Id:</strong>{{ performance.match_id }}</p>
+            <p><strong>Venue Id:</strong>{{ performance.venue_id }}</p>
+            <p><strong>Date Of The Match:</strong>{{ performance.date_of_the_match }}</p>
+            <p><strong>Player Id:</strong>{{ performance.player_id }}</p>
+            <p><strong>Total Wickets:</strong>{{ performance.total_wickets }}</p>
+            <p><strong>total_runs:</strong>{{ performance.total_runs }}</p>
+            <p><strong>Out Standing Performance:</strong>{{ performance.out_standing_performance }}</p>
+         
+            
+        </div>
+        </body>
+        </html>

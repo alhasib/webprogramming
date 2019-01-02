@@ -1,0 +1,43 @@
+
+<html>
+        <head>
+            <title>Contract Information</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <style>
+                body {
+                  background: #555;
+                }
+                
+                .content {
+                  max-width: 500px;
+                  margin: auto;
+                  background: white;
+                  padding: 50px;
+                }
+                </style>
+        </head>
+        <body>
+        <div class="content">
+            <p><a href="{% url 'home' %}" class="btn btn-info" role="button">HOME</a></p>
+            <center><p><h1><strong>Contract Information</strong></h1></p></center>
+            <p><strong>Club Id:</strong>{{ contact_info.club_id }}</p>
+            <p><strong>Club Name:</strong>{{ contact_info.club_name }}</p>
+            <p><strong>First Name:</strong>{{ contact_info.first_name }}</p>
+            <p><strong>Middle Name:</strong>{{ contact_info.middle_name }}</p>
+            <p><strong>Last Name:</strong>{{ contact_info.last_name }}</p>
+            <p><strong>Player Id :</strong>{{ contact_info.player_id  }}</p>
+            <p><strong>Authorized Person First Name:</strong>{{ contact_info.authorized_Person_first_name }}</p>
+            <p><strong>Authorized Person_middle_name:</strong>{{ contact_info.authorized_Person_middle_name }}</p>
+            <p><strong>Authorized Person_last_name:</strong>{{ contact_info.authorized_Person_last_name }}</p>
+            <p><strong>Designation:</strong>{{ contact_info.designation }}</p>
+            <p><strong>Contract Period Start Date:</strong>{{ contact_info.contract_period_start_date }}</p>
+            <p><strong>Contract Period End Date:</strong>{{ contact_info.contract_period_end_date }}</p>
+            <p><strong>Contract Amount:</strong>{{ contact_info.contract_amount }}</p>
+            <p><strong>Payment Serial Number:</strong>{{ contact_info.payment_serial_number }}</p>
+            <p><strong>Payment Due Date:</strong>{{ contact_info.payment_due_date }}</p>
+            <p><strong>Payment Date:</strong>{{ contact_info.payment_date }}</p>
+            <p><strong>Payment Amount:</strong>{{ contact_info.payment_amount }}</p>
+            <p><strong>Contract Witness:</strong>{{ contact_info.contract_witness }}</p>
+        </div>
+        </body>
+        </html>

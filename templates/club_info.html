@@ -1,0 +1,35 @@
+
+<html>
+        <head>
+            <title>Club Registration Information</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <style>
+                body {
+                  background: #555;
+                }
+                
+                .content {
+                  max-width: 500px;
+                  margin: auto;
+                  background: white;
+                  padding: 50px;
+                }
+                </style>
+        </head>
+        <body>
+        <div class="content">
+            <p><a href="{% url 'home' %}" class="btn btn-info" role="button">HOME</a></p>
+            <center><p><h1><strong>Club Registration Information</strong></h1></p></center>
+            <p><strong>Club Name:</strong>{{ club.club_name }}</p>
+            <p><strong>Date Of Establishment:</strong>{{ club.date_of_establishment }}</p>
+            <p><strong>House No:</strong>{{ club.house_no }}</p>
+            <p><strong>Location:</strong>{{ club.location }}</p>
+            <p><strong>Street:</strong>{{ club.street }}</p>
+            <p><strong>Thana:</strong>{{ club.thana }}</p>
+            <p><strong>District:</strong>{{ club.district }}</p>
+            <p><strong>Post Code:</strong>{{ club.post_code }}</p>
+            <p><strong>President Name:</strong>{{ club.president_name }}</p>
+            
+        </div>
+        </body>
+        </html>

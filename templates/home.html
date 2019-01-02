@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Information System for Cricket Clubs of Bangladesh</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+      .content {
+        max-width: 500px;
+        margin: auto;
+        background: white;
+        padding: 50px;
+      }
+      </style>
+</head>
+<body>
+<div class="content">
+<div class="container">
+  <h2>Form Links</h2>
+  <p><a href="{% url 'player_registration' %}" class="btn btn-info" role="button">PLAYER REGISTRATION FORM</a></p>
+  <p><a href="{% url 'contact' %}" class="btn btn-info" role="button">CONTACT FORM</a></p>
+  <p><a href="{% url 'club_registraoin' %}" class="btn btn-info" role="button">CLUB REGISTRATION FORM</a></p>
+  <p><a href="{% url 'player_performance' %}" class="btn btn-info" role="button">PLAYER PERFORMANCE FORM</a></p>
+  <p><a href="{% url 'match_information' %}" class="btn btn-info" role="button">MATCH INFORMATION FORM</a></p>
+  <p><a href="{% url 'team_information' %}" class="btn btn-info" role="button">TEAM INFORMATION FORM</a></p>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+<html>
+        <head>
+            <title>Match Information</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <style>
+                body {
+                  background: #555;
+                }
+                
+                .content {
+                  max-width: 500px;
+                  margin: auto;
+                  background: white;
+                  padding: 50px;
+                }
+                </style>
+        </head>
+        <body>
+        <div class="content">
+            <p><a href="{% url 'home' %}" class="btn btn-info" role="button">HOME</a></p>
+            <center><p><h1><strong>Match Information</strong></h1></p></center>
+            <p><strong>Event Id:</strong>{{ match_info.event_id }}</p>
+            <p><strong>Venue Id:</strong>{{ match_info.venue_id }}</p>
+            <p><strong>Date Of The Match:</strong>{{ match_info.date_of_the_match }}</p>
+            <p><strong>Match Id:</strong>{{ match_info.match_id }}</p>
+            <p><strong>Man Of The Match:</strong>{{ match_info.man_of_the_match }}</p>
+            <p><strong>Umpires:</strong>{{ match_info.umpires }}</p>
+         
+            
+        </div>
+        </body>
+        </html>

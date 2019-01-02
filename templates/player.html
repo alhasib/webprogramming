@@ -1,0 +1,67 @@
+
+<html>
+<head>
+    <title>Information System for Cricket Clubs of Bangladesh</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          background: #555;
+        }
+        
+        .content {
+          max-width: 500px;
+          margin: auto;
+          background: white;
+          padding: 50px;
+        }
+        </style>
+</head>
+<body>
+<div class="content">
+<p><a href="{% url 'home' %}" class="btn btn-info" role="button">HOME</a></p>
+<center><p><h1><strong>Player Information</strong></h1></p></center>  
+<p><strong>First Name:</strong>{{ player.first_name }}</p>
+<p><strong>Middle Name:</strong>{{ player.middle_name }}</p>
+<p><strong>Last Name:</strong>{{ player.last_name }}</p>
+<p><strong>Father"s Name:</strong>{{ player.fathers_name }}</p>
+<p><strong>Mother's Name:</strong>{{ player.mother_name }}</p>
+<p><strong>Present Address:</strong>{{ player.present_address }}</p>
+<p><strong>House No:</strong>{{ player.house_no }}</p>
+<p><strong>Location:</strong>{{ player.location }}</p>
+<p><strong>Street:</strong>{{ player.street }}</p>
+<p><strong>Thana:</strong>{{ player.thana }}</p>
+<p><strong>District:</strong>{{ player.district }}</p>
+<p><strong>Post Code:</strong>{{ player.post_code }}</p>
+<p><strong>Permanent Address:</strong>{{ player.permanent_address }}</p>
+<p><strong>Permanent House Nno:</strong>{{ player.permanent_house_no }}</p>
+<p><strong>Permanent Location:</strong>{{ player.permanent_location }}</p>
+<p><strong>Permanent Street:</strong>{{ player.permanent_street }}</p>
+<p><strong>Permanent Thana:</strong>{{ player.permanent_thana }}</p>
+<p><strong>Permanent District:</strong>{{ player.permanent_district }}</p>
+<p><strong>Permanent Post Code:</strong>{{ player.permanent_post_code }}</p>
+<p><strong>Date Of Birth:</strong>{{ player.date_of_birth }}</p>
+<center><p><h1><strong>Previous History</strong></h1></p></center>
+<p><strong>Previous Club Name:</strong>{{ player.previous_club_name }}</p>
+<p><strong>From:</strong>{{ player.fromm }}</p>
+<p><strong>To:</strong>{{ player.to }}</p>
+<p><strong>Total Runs:</strong>{{ player.total_runs }}</p>
+<p><strong>Total_Wickets:</strong>{{ player.total_wickets }}</p>
+<p><strong>Team Leader:</strong>{{ player.team_leader }}</p>
+<center><p><h1><strong>Best Performance</strong></h1></p></center>
+<p><strong>Best Performance Club Name:</strong>{{ player.best_performance_club_name }}</p>
+<p><strong>Opponent Club Name:</strong>{{ player.opponent_club_name }}</p>
+<p><strong>Event Id:</strong>{{ player.event_id }}</p>
+<p><strong>Match Id:</strong>{{ player.match_id }}</p>
+<p><strong>Runs:</strong>{{ player.runs }}</p>
+<p><strong>Wickets:</strong>{{ player.wickets }}</p>
+<center><p><h1><strong>Educational Qualifications</strong></h1></p></center>
+<p><strong>Name Of Degree:</strong>{{ player.name_of_degree }}</p>
+<p><strong>Institution:</strong>{{ player.institution }}</p>
+<p><strong>Board:</strong>{{ player.board }}</p>
+<p><strong>Passing_year:</strong>{{ player.passing_year }}</p>
+<p><strong>Result:</strong>{{ player.result }}</p>
+<p><strong>Membership:</strong>{{ player.membership.name }}</p>
+<p><strong>Date:</strong>{{ player.date }}</p>
+</div>
+</body>
+</html>
